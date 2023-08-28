@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts</title>
+    <link rel="stylesheet" href="parrallex.css"/>
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <div class="container">
+            <img src="Bg1.jpg" class="background"/>
+            <img src="fore.png" class="foreground"/>
+            <h1> WIZARDING WORLD </h1>
+        </div>
+
+
+        <section>
+            <h2 class="sec-heading"> HOGWARTS </h2>
+            <p class="text">
+                Welcome to the school of Wizardry and Witchcraft. Here we'll Give you a tour of our school and some more interesting things.
+                <br/><br/>
+                Founded around the 9th century and 10th century by Godric Gryffindor, Rowena Ravenclaw, Helga Hufflepuff and Salazar Slytherin, Hogwarts was established in the Highlands of Scotland to educate young wizards and witches as well as to keep students safe from Muggle persecution. Theory has it that Rowena Ravenclaw came up with the name of Hogwarts after dreaming of a warty hog that led her to a cliff by a lake.[4] Since then, Hogwarts educated most wizarding children with residence in Great Britain and Ireland, keeping its location hidden from other wizarding schools and Muggles.
+            </p>
+
+
+            <div class="bg bg1">
+                <h2 class="desc">Platform <sup>9<small>3/4</small></sup></h2>
+            </div>
+                <p class="text">
+                    The primary mode of transport to Hogwarts is the Hogwarts Express that students take at the start of each school year. Students board the train from the also fictional and hidden Platform 9¾ at King's Cross station in London. The train arrives at Hogsmeade station near Hogwarts, sometime after nightfall.
+                    <br/><br/>
+                    From there, first-year students are accompanied by the "Keeper of the Keys, Game and Grounds" (which was Hagrid during the first novel) to small boats, which magically sail across the lake and get them near the entrance of Hogwarts. The older students ride up to the castle in carriages pulled by creatures called Thestrals.
+                </p>
+
+            <div class="bg bg2">
+                    <h2 class="desc">Dormitory</h2>
+            </div>
+                    <p class="text">
+                        Hogwarts is divided into four houses, each bearing the last name of its founder:
+                         Godric Gryffindor, Salazar Slytherin, Rowena Ravenclaw and Helga Hufflepuff. Throughout
+                          the school year, the houses compete for the House Cup, gaining and losing points based
+                         on actions such as performance in class and rule violations. 
+                         The house with the highest end-of-year total wins and has its colours displayed in the
+                          Great Hall for the following school year.
+                          <br/><br/>
+                          Each house also has its own Quidditch team
+                           that competes for the Quidditch Cup. These two competitions breed rivalries between 
+                        the houses. Houses at Hogwarts are living and learning communities for their students.
+                        Each house is under the authority of one of the Hogwarts staff members. The Heads of the
+                        houses, as they are called, are in charge of giving their students important information,
+                        dealing with matters of severe punishment, and responding to emergencies in their houses, 
+                        among other things. 
+                        <br/><br/>
+                        The dormitory and common room of a House are, barring rare exceptions,
+                         inaccessible to students belonging to other Houses; however, different houses will share 
+                         classes as they are based on year group rather than House.
+                    </p>
+
+            <div class="bg bg4">
+                <h2 class="desc">Dining hall</h2>
+            </div>
+            <p class="text">
+                Finally, the role of the Seeker is to catch the Golden Snitch.
+                A Seeker catching the Snitch ends the game and scores the successful Seeker's team an additional 150 points. (15 goals) As the team with the most points wins, this often guarantees victory for the successful Seeker's team
+            </p>
+
+            <div class="bg bg3">
+                <h2 class="desc">Quidditch</h2>
+            </div>
+            <p class="text p3">
+                Quidditch matches are played over an oval-shaped pitch, with a scoring area at each end consisting of three hooped goal posts, each at a different height. Each team is made up of seven players, consisting of three Chasers, two Beaters, one Keeper and one Seeker.
+                <br/><br/>
+                The job of the Chasers is to keep possession of the scarlet Quaffle, a leather ball passed between fellow chasers. They must attempt to score goals (worth 10 points) by throwing it through one of the opponents' three hoops. These hoops are defended by the opposing team's Keeper, who ideally tries to block their goals and throw the "Quaffle" to fellow chasers.
+                <br/><br/>
+                Meanwhile, players of both teams are attacked indiscriminately by the two Bludgers. These are round, jet-black balls made of iron that fly around violently trying to knock players off their brooms. It is the Beaters' job to defend their teammates from the Bludgers; they carry short wooden clubs, which they use to knock the Bludgers away from their teammates and/or toward the opposing team.    
+                <br/><br/>
+                Finally, the role of the Seeker is to catch the Golden Snitch.
+                A Seeker catching the Snitch ends the game and scores the successful Seeker's team an additional 150 points. (15 goals) As the team with the most points wins, this often guarantees victory for the successful Seeker's team
+            </p>
+        </section>
+
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+                                     --------CSS--------
+                          
+                          
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Tahoma, sans-serif;
+    /* background-color: black; */
+}
+#wrapper{
+    perspective: 10.5px;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.container{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    height: 100%;
+    z-index: -1;
+}
+.background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit:fill;
+    transform: translateZ(-40px) scale(5);
+}
+.foreground
+{
+    position:relative;
+    margin-top: 80%;
+    object-fit:cover;
+    height: 80%;
+    width: auto;
+    z-index: -1;
+    transform: translateZ(-30px) scale(3);
+}
+h1{
+    position: absolute;
+    top: 5rem;
+    letter-spacing: 4px;
+    font-size: 5rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 251, 251, 0.654);
+}
+
+section{
+    background-color: rgb(26, 58, 47);
+    color: white;
+}
+
+.sec-heading{
+    font-size: 4rem;
+    padding: 5rem 10rem;
+    padding-bottom: 0;
+}
+.text{
+    font-size:1rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.desc{
+    position: absolute;
+    background-color: white;
+    top: 40%;
+    left: 50%;
+    padding: .5rem 2rem;
+    color: black;
+    transform: translate(-50%);
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.bg1{
+    background-image: url(platform.jpg);
+}
+.bg2{
+    background-image: url(common-hall.jpg);
+}
+.bg3{
+    background-image: url(quidditch2.jpg);
+}
+.bg4{
+    background-image: url(dining_hall.jpeg);
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.p3{
+    padding-bottom:100px;
+}          

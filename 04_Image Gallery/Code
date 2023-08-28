@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="ImageGallery.css"/>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <h1>Image Gallery</h1>
+            <div class="gallery">
+                    <figure class="card">
+                        <img src="image1.jpg" alt="image1"/>
+                        <figcaption>image1</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="image2.jpeg" alt="image2"/>
+                        <figcaption>image2</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="image3.jpeg" alt="image3"/>
+                        <figcaption>image3</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="image4.jpeg" alt="image4"/>
+                        <figcaption>image4</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="image5.jpeg" alt="image5"/>
+                        <figcaption>image5</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="image6.jpeg" alt="image6"/>
+                        <figcaption>image6</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="image7.jpeg" alt="image7"/>
+                        <figcaption>image7</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="image8.jpeg" alt="image8"/>
+                        <figcaption>image8</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="image9.jpeg" alt="image9"/>
+                        <figcaption>image9</figcaption>
+                    </figure>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+// CSS CODE HERE
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#wrapper{
+    /* box-sizing: border-box; */
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+}
+.container{
+    width: 60%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container h1{
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    width: 32%;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100%);
+    box-shadow: 0 0 20px #333;
+    object-fit: cover;
+}
+.card:hover{
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 10px #333);
+    transform: 0.5s;
+}
+.card:hover img{
+    filter: grayscale(0%);
+}
+.card figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    width: 100%;
+    height: 20%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0;
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: 0.3s;
+}
+.card:hover figcaption {
+    opacity: 1;
+    transform: scale(1.03);
+}

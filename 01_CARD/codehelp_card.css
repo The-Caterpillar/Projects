@@ -1,0 +1,56 @@
+body
+{
+    background-color: lavender;
+}
+.card
+{
+    width: 35.5%;
+    height: auto;
+    border-radius: 1vw;
+    padding: 2vw;
+    background-color: white;
+    margin: 20px;
+    position: relative;
+    line-height: 3.5vw;
+    position: relative;
+    font-weight: 600;
+    font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif ;
+    font-size: 2.5vw;
+}
+img
+{
+    width: 35vw;
+    height: auto;
+    border-radius:inherit;
+    position:inherit;
+}
+hr
+{
+    border-top: rgba(119, 136, 153, 0.249);
+    border-left: rgba(119, 136, 153, 0.249);
+    color:rgba(151, 167, 184, 0.249);
+    background-color: rgba(119, 136, 153, 0.249);
+    width: 80%;
+    height: 2px;
+    margin-left:0;
+    text-align: left;
+}
+
+.charges
+{
+    font-size: 60%;
+}
+
+.per42
+{
+    background-color: rgb(20, 206, 169); 
+    height:700%;
+    color:white;
+    border-radius: 0.5vw;
+    padding: 1.5%;
+}
+
+span
+{
+    margin: 1%;
+}
