@@ -15,7 +15,7 @@ const symbols = '~`!@#$%^&*()_-+={[}]|:;"<,>.?/';
 
 
 //initially
-let password = "";
+let password = "0000000000";
 let passwordLength = 10;
 let checkCount = 0;
 handleSlider();
@@ -24,29 +24,34 @@ setIndicator("#ccc");
 
 
 //set passwordLength
-function handleSlider() {
+function handleSlider() 
+{
     inputSlider.value = passwordLength;
     lengthDisplay.innerText = passwordLength;
-    //or kuch bhi karna chahiye ? - HW
+    //or kuch bhi karna chahiye ?
     const min = inputSlider.min;
     const max = inputSlider.max;
-    inputSlider.style.backgroundSize = ( (passwordLength - min)*100/(max - min)) + "% 100%"
+    inputSlider.style.backgroundSize = ((passwordLength - min)*100/(max - min)) + "% 100%"
 }
 
-function setIndicator(color) {
+function setIndicator(color)
+{
     indicator.style.backgroundColor = color;
     indicator.style.boxShadow = `0px 0px 12px 1px ${color}`;
 }
 
-function getRndInteger(min, max) {
+function getRndInteger(min, max)
+{
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-function generateRandomNumber() {
+function generateRandomNumber()
+{
     return getRndInteger(0,9);
 }
 
-function generateLowerCase() {  
+function generateLowerCase()
+{
        return String.fromCharCode(getRndInteger(97,123))
 }
 
@@ -54,12 +59,14 @@ function generateUpperCase() {
     return String.fromCharCode(getRndInteger(65,91))
 }
 
-function generateSymbol() {
+function generateSymbol()
+{
     const randNum = getRndInteger(0, symbols.length);
     return symbols.charAt(randNum);
 }
 
-function calcStrength() {
+function calcStrength()
+{
     let hasUpper = false;
     let hasLower = false;
     let hasNum = false;
@@ -71,18 +78,20 @@ function calcStrength() {
   
     if (hasUpper && hasLower && (hasNum || hasSym) && passwordLength >= 8) {
       setIndicator("#0f0");
-    } else if (
+    }
+    else if
+    (
       (hasLower || hasUpper) &&
       (hasNum || hasSym) &&
       passwordLength >= 6
-    ) {
-      setIndicator("#ff0");
-    } else {
+    ) {setIndicator("#ff0");} 
+    else {
       setIndicator("#f00");
     }
 }
 
-async function copyContent() {
+async function copyContent() 
+{
     try {
         await navigator.clipboard.writeText(passwordDisplay.value);
         copyMsg.innerText = "copied";
@@ -99,7 +108,8 @@ async function copyContent() {
 
 }
 
-function shufflePassword(array) {
+function shufflePassword(array)
+{
     //Fisher Yates Method
     for (let i = array.length - 1; i > 0; i--) {
         //random J, find out using random function
@@ -114,7 +124,8 @@ function shufflePassword(array) {
     return str;
 }
 
-function handleCheckBoxChange() {
+function handleCheckBoxChange() 
+{
     checkCount = 0;
     allCheckBox.forEach( (checkbox) => {
         if(checkbox.checked)
@@ -122,7 +133,8 @@ function handleCheckBoxChange() {
     });
 
     //special condition
-    if(passwordLength < checkCount ) {
+    if(passwordLength < checkCount ) 
+    {
         passwordLength = checkCount;
         handleSlider();
     }
