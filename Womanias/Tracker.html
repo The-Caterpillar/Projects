@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Period Tracker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+    <header>
+        <h1>Period Tracker</h1>
+    </header>
+    <!-- ... (previous HTML code) -->
+
+    <main>
+        <section id="period-form">
+            <h2>Track Your Period</h2>
+            <form id="period-tracker-form">
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" required>
+
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" required>
+
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+            <ul id="period-list">
+                <!-- Period entries will be added here -->
+            </ul>
+        </section>
+        <section id="bot">
+            <h2>Chat with the Bot</h2>
+            <ul class="chat-history">
+                <!-- Bot and user messages will be displayed here -->
+            </ul>
+            <input type="text" id="user-input" placeholder="Type your message...">
+        </section>
+    </main>
+
+<!-- ... (remaining HTML code) -->
+
+    <footer>
+        <p>&copy; 2023 Period Tracker</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
