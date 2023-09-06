@@ -1,0 +1,401 @@
+<html>
+<head> <title> Home-Physiot </title>
+<style type="text/css">
+
+body
+	{
+	background:linear-gradient(60deg,lightsteelblue,white,lightsteelblue);
+	background-attachment:fixed;
+    margin:1%;
+	margin-bottom:0;
+	}
+.header
+	{
+	margin-left:2%;
+	margin-bottom:0px;
+	width:96%;
+	font-family:"platino linotype";
+	font-style:bold;
+	background-image:url('phy5.png');
+	height:50%;
+	}
+.Col1
+	{	
+	background-color:lavender;
+	width:23.5;
+	border-bottom-left-radius:20px;
+	border-top-right-radius:20px;
+	}
+a
+	{	
+	text-decoration:none;
+    }
+a:link
+	{	
+	color:navy;
+	}
+a:visited
+{	
+	color:purple;
+}
+a:hover
+{	
+	color:mediumslateblue;	
+}
+a:active
+	{	
+	color:palegreen;
+	}
+	
+.headlinkcols
+	{	
+	padding:0.2%;
+	border:1px;
+	align:center;
+	margin-left:2.1%;
+	width:95.99%;
+	line-height:1.6em;
+	font-family:"Franklin Gothic Heavy";
+	background-color:white;
+	text-align:center;
+	}
+.table3
+	{
+	justify-content:center;
+	align-items:center;
+	min-height:2vh;
+	font-family:forte;
+	margin-left:4%;
+	margin-bottom:2%;
+	margin-top:2%;
+	padding:0;
+	}
+.container
+	{
+	position:relative;
+	width:96%;
+	display:grid;
+	grid-template-columns:repeat(auto-fill, minmax(17%,1fr));
+	grid-template-rows:auto;
+	grid-gap:2.5%;
+	}
+.container .box
+	{
+	position:relative;
+	height:7vw;
+	background:steelblue;
+	justify-content:center;
+	align-items:center;
+	border:2px;
+	border-style:hidden;
+	background:linear-gradient(45deg,lavender,lightsteelblue,lavender);
+	
+	}
+.container .box:before
+	{
+	content:'';
+	position:absolute;
+	top:-2px;
+	left:-2px;
+	right:-2px;
+	bottom:-2px;
+	background:linear-gradient(45deg,navy,steelblue,lavender,steelblue,navy);
+	transform: skew(2deg,2deg);
+	z-index:-1;
+	}
+.content
+	{
+	position:relative;
+	padding:1%;
+	}
+.box .content h2
+	{
+	position:absolute;
+	left:7%;
+	text-align:center;
+	color:navy;
+	}
+.box:hover .content h2
+	{
+	position:absolute;
+	}
+ul
+	{
+	list-style-type:none;
+	margin-top:0;
+	color:navy;
+	margin-left:0;
+	}
+.box .content ul
+	{
+	margin:0 0 0;
+	padding:0;
+	font-size:15px;
+	color:navy;
+	font-family:"Corbel";
+	}
+
+.box .content ul
+	{
+	position:absolute;
+	margin: 0;
+	padding:10% 20%;
+	display:inline-block;
+	color:navy;
+	transition:0.5s;
+	transform:translateY(20px);
+	opacity:0;
+	visibility:hidden;
+	}
+.box:hover .content ul
+{
+	transform:translateY(20%);
+	opacity:1;
+	visibility:visible;
+}
+.box .content ul:hover
+	{
+	color:navy;
+	background-color:lavender;
+	}
+.box .content ul
+	{
+	margin: 0 2%;
+	padding: 3%;
+	color:#fff;
+	}
+
+.content2
+	{
+	position:relative;
+	padding:1%;
+	}
+.box .content2 h2
+	{
+	position:relative;
+	left:2%;
+	text-align:center;
+	color:navy;
+	}
+.box:hover .content2 h2
+	{
+	
+	}
+.box .content2 ul
+	{
+	margin:0 0 0;
+	padding:0;
+	font-size:90%;
+	color:navy;
+	font-family:"Corbel";
+	}
+
+.box .content2 ul
+	{
+	position:absolute;
+	margin:0;
+	padding:2 2%;
+	display:inline-block;
+	color:navy;
+	transition:0.5s;
+	transform:translateY(1%);
+	opacity:0;
+	visibility:hidden;
+	}
+.box:hover .content2 ul
+{
+	transform:translateY(-2%);
+	opacity:1;
+	visibility:visible;
+}
+.box .content2 ul:hover
+	{
+	color:navy;
+	background-color:lavender;
+	}
+	
+.box .content3 p
+	{
+	position:absolute;
+	margin:0;
+	padding:2 2%;
+	display:inline-block;
+	color:navy;
+	transition:0.5s;
+	transform:translateY(2%);
+	opacity:0;
+	visibility:hidden;
+	}
+.box:hover .content3 p
+{
+	transform:translateY(7%);
+	font-family: Arial;
+	opacity:1;
+	visibility:visible;
+}
+.box .content3 p:hover
+	{
+	color:navy;
+	background-color:lavender;
+	
+h3
+	{
+	margin-top:2%;
+	margin:10%;
+	}
+.dis1
+	{
+	margin:2%
+	}
+.col2
+	{
+	padding:2%;
+	color:navy;
+	text-align:center;
+	font-family:"Cooper Black";
+	font-size:150%;
+	border-color:blue;
+	border:5px;
+	border-style:hidden;
+	width:19.2%;
+	border-color:red;
+	background:linear-gradient(45deg,lavender,lightsteelblue,lavender);
+	border-radius:50%;
+	}
+.footer
+	{
+	padding:2%;
+	font-family:"Candara";
+	font size:10px;
+	font-stretch:20%;
+	color:#000;
+	background:linear-gradient(45deg,navy,blue,lightsteelblue,blue,navy);
+	letter-spacing:0.2%;
+	}
+	
+</style>
+<table class="headlinkcols">
+<tr> <h1 class="header"> </h1>  </tr>
+<tr>
+<td class="Col1" > <a href="Home.html"> HOME </a> </td>
+<td class="Col1" > <a href="SUp.html"> Login/Sign up </a> </td>
+<td class="Col1" class="links"> <a href="PatientExp.html"> Patient Experiences </a> </td>
+<td class="Col1"> <a href="Security.html"> Security and Help </a> </td>
+</tr>
+</table>
+</head>
+<br/>
+<body>
+
+<div class="table3">
+<div class="container">
+<div class="box">
+<div class="content">
+<h2> <a href="services.html"> Services </a></h2>
+<ul>
+<li> <a href=""> Physiotherapy </a> </li>
+<li> <a href=""> Manual Therapy </a> </li>
+<li> <a href=""> Electro Therapy </a></li>
+<li> <a href=""> Laser Therapy </a></li>
+<li> <a href="">Custom Orthotics</a></li>
+<li> <a href="">Special Education</a></li>
+<li> <a href="">Speech Therapy</a></li>
+<li> <a href="">Ooccupational Therapy</a></li>
+<li> <a href="">Orthopaedic Therapy</a></li> 
+<li> <a href="">Neuro Therapy</a></li>
+<li> <a href="">Sports Therapy</a></li>
+<li> <a href="">Paediatrics Therapy</a></li>
+<li> <a href="">Dry Needling</a></li>
+<li> <a href="">Physiotherapy at home</a></li>
+</ul>
+</div>
+</div>
+<div class="box">
+<div class="content2">
+<h2><a href="treatments.html"> Treatments </a></h2>
+<ul class="content2">
+<li> <a href="https://www.physio-pedia.com/Anterior_Cruciate_Ligament_(ACL)_Rehabilitation">ACL </a> </li>
+<li> <a href="https://www.physio-pedia.com/Ankle_Sprain"> Ankle Sprain</a> </li>
+<li> <a href="https://www.healthline.com/health/shoulder-impingement"> Shoulder Impigment </a></li>
+<li> <a href="https://physio-pedia.com/Low_Back_Pain"> Back Pain </a></li>
+<li> <a href="https://www.physio-pedia.com/Plantarfasciitis"> Plantar Fasciitis</a></li>
+<li> <a href="https://www.physio-pedia.com/Bell%27s_Palsy"> Bell's Palsy</a></li>
+<li> <a href="https://www.medicinenet.com/osteoarthritis/article.htm"> Ostioarthritis</a></li>
+<li> <a href="https://www.physio-pedia.com/Rheumatoid_Arthritis"> Rheumatoid arthritis</a></li>
+<li> <a href="https://www.physio-pedia.com/MS_Multiple_Sclerosis"> Multiple Sclerosis</a></li> 
+<li> <a href="https://www.physio-pedia.com/Physiotherapy_Management_of_Spinal_Cord_Injuries"> Spinal Chord Injuries</a></li>
+<li> <a href="https://www.physio-pedia.com/Ankylosing_Spondylitis"> Ankylosing Spondylitis</a></li>
+<li> <a href="https://www.physio-pedia.com/Brachial_plexus"> Brachial Plexus Injury</a></li>
+<li> <a href="https://www.physio-pedia.com/Calf_Strain"> Calf Strain</a></li>
+<li> <a href="https://www.mayoclinic.org/diseases-conditions/foot-drop/diagnosis-treatment/drc-20372633"> Foot Drop</a></li>
+<li> <a href="https://www.physio-pedia.com/Carpal_Tunnel_Syndrome"> Carpal Tunnel Syndrome</a></li>
+<li> <a href="https://www.intechopen.com/books/neurological-physical-therapy/physical-therapy-for-cerebellar-ataxia"> Cerebellar Ataxia</a></li>
+<li> <a href="https://www.physio-pedia.com/Cervical_Spondylosis"> Cervical Spondylosis</a></li>
+<li> <a href="https://www.physio-pedia.com/Cervicogenic_Headache"> Cervicogenic Headache</a></li>
+<li> <a href="https://www.physio-pedia.com/Chondromalacia_Patellae"> Chondromalesia Patella</a></li>
+<li> <a href="https://www.physio-pedia.com/Costochrondritis"> Costochondritis</a></li>
+<li> <a href="https://www.physio-pedia.com/Diastasis_recti_abdominis"> Diastasis Recti</a></li>
+<li> <a href="https://www.physio-pedia.com/Fibromyalgia"> Fibromyalgia</a></li>
+<li> <a href="https://www.physio-pedia.com/Calcaneal_Spurs"> Calcaneal Spur</a></li>
+<li> <a href="https://physioworks.com.au/Injuries-Conditions/Regions/hip-pain-joint-injury"> Hip Pain</a></li>
+<li> <a href="https://www.physio-pedia.com/Lumbar_Spinal_Stenosis"> Lumbar Spinal Stenosis</a></li>
+<li> <a href="https://www.physio-pedia.com/Meniscal_Lesions"> Meniscus Injury</a></li>
+<li> <a href="https://www.physio-pedia.com/Meralgia_Paraesthetica"> Meralgia Paresthetica</a></li>
+<li> <a href="https://www.physio-pedia.com/Duchenne_Muscular_Dystrophy"> Muscular Dystrophy</a></li>
+<li> <a href="https://www.physio-pedia.com/Trigeminal_Neuralgia"> Neuralgia</a></li>
+<li> <a href="https://www.physio-pedia.com/Diabetic_Neuropathy"> Neuropathy</a></li>
+<li> <a href="https://www.portea.com/physiotherapy/parkinsons-disease-treatment/"> Parkinson Desease</a></li>
+<li> <a href="https://www.physio-pedia.com/Fracture"> Post Fracture</a></li>
+<li> <a href="https://www.physio-pedia.com/Scoliosis">Scoliosis</a></li>
+<li> <a href="https://www.physio-pedia.com/Shin-splints"> Shin Splint</a></li>
+<li> <a href="https://www.physio-pedia.com/Trigger_Points">Trigger Point Pain </a></li>
+<li> <a href="https://www.physio-pedia.com/Traumatic_Brain_Injury"> Traumatic Brain Injury</a></li>
+<li>  <a href="https://www.thephysiocompany.com/injury-or-condition/reflex-sympathetic-dystrophy-rsd">Reflex Sympathetic Dystrophy </a></li>
+<li><a href="https://www.webmd.com/osteoarthritis/knee-replacement-18/knee-surgery-physical-therapy">  Total Knee Replacement</a></li>
+<li> <a href="https://www.physio-pedia.com/Sciatica">Sciatica</a></li>
+<li> <a href="https://www.physio-pedia.com/Disc_Herniation"> Slipped Disc</a></li>
+<li> <a href="https://www.physio-pedia.com/Sacroiliac_joint_syndrome"> (SIJ) Joint Dysfunction</a></li>
+<li> <a href="https://physioworks.com.au/injuries-conditions-1/frozen_shoulder"> Frozen Shoulder</a></li>
+<li> <a href="https://www.physiotherapy-treatment.com/cerebral-palsy-physiotherapy.html"> Cerebral Palsy</a></li>
+<li> <a href="https://www.physio-pedia.com/Total_Knee_Arthroplasty"> Arthroplasty</a></li>
+<li> <a href="https://www.physio-pedia.com/Benign_Positional_Paroxysmal_Vertigo_(BPPV)"> Vertigo</a></li>
+<li> <a href="https://www.physio-pedia.com/Trigger_finger"> Trigger Finger</a></li>
+<li> <a href="https://www.physio-pedia.com/Tendinopathy"> Tendonitis</a></li>
+<li> <a href="https://www.healthline.com/health/tmj-exercises"> (TMD) Joint Dysfunction</a></li>
+<li> <a href="https://www.physio-pedia.com/Supraspinatus_tendinopathy">Supraspinatus Tendinitis </a></li>
+<li> <a href="https://www.physio-pedia.com/Incontinence">Stress Incontinence </a></li>
+</ul>
+</div>
+</div>
+<div class="box">
+<div class="content3">
+<h2><a href="Contact.html"> &nbsp;&nbsp;&nbsp;&nbsp;  Contact-Us </a></h2>
+<p> Phone: 9811263000/8130062000 </p>
+</div>
+</div>
+<div class="box">
+<div class="content3">
+<h2><a href="Location.html"> &nbsp;&nbsp;&nbsp; Location </a></h2>
+<p> Sector 48, Block number-23, Near Huda City Center Metro, Gurugram, Haryana </p>
+</div>
+</div>
+<div class="box">
+<div class="content3">
+<h2> <a href="Timings.html"> Timings </a> </h2>
+<p> Tue-Fri: 9:30 am to 01:00 pm ;<br/> 3:pm to 9:30 pm <br/> Sat-Sun: 2:00 pm to 8:30 pm </p>
+</div>
+</div>
+</div>
+</div>
+
+
+<table class="dis1">
+<tr> <h3> About Us: </h3>  </tr>
+<tr>
+<td>  </td>
+</tr>
+</table>
+
+
+</body>
+</html>

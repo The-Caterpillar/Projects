@@ -1,0 +1,4 @@
+<html>
+<title> DIV table </title>
+<head>
+<style type="text/css">

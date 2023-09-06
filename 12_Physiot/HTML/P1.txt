@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Local News
+</title>
+<BIG> LOCAL NEWS </BIG>
+<BODY BGCOLOR="CRIMSON">

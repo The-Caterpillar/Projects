@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head> <title> Fevicon and div </title>
+<style type="text/css">
+#footer
+{
+height:100px;
+width:100%;
+background-color:red;
+text-align:center;
+}
+.text
+{
+ height:100px;
+ width:20%;
+ background-color:green;
+ float:left;
+}
+.right
+{
+height:100px;
+width:20%;
+background-color:green;
+float:right;
+}
+.center
+{
+height:100px;
+width:20%;
+background-color:green;
+margin-left:40%;
+}
+.square{
+background-color:green;
+text-align:center;
+height:200px;
+opacity:0.8;
+width:200px;
+margin-left:40%;
+}
+.rect{
+background-color:blue;
+text-align:center;
+height:220px;
+opacity:0.8;
+width:200px;
+margin-left:50%;
+}
+.hex{
+background-color:red;
+text-align:center;
+height:220px;
+opacity:0.8;
+width:200px;
+margin-left:-120%
+}
+.dow{
+background-color:yellow;
+text-align:center;
+height:200px;
+opacity:0.8;
+width:200px;
+margin-top:-20%;
+margin-left:-20%
+}
+</style>
+<link href="Sherl.jpg" rel="shortcut icon"/> <!-- rel= Relation-->
+</head>
+<h1 id="footer"> Musiscals </h1>
+<body>
+<div id="footer">
+<div class="text"> </div>
+<div class="right"> </div>
+<div class="center"> Hey! </div>
+ </div> <br/> <br/>
+ <div class="square">  Woah! <div class="rect">  Woah!  <div class="hex"> Woah! </div></div><div class="dow"> hah! </div> </div>
+</html>

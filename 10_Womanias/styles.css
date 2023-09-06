@@ -56,7 +56,6 @@ html,body{
 	align-items: center;
 	padding: 0 10vw 0 10vw;
 	height: 100vh;
-	
 }
 
 .landingText h1{
@@ -111,14 +110,12 @@ html,body{
 
 .aboutText h1{
 	position: relative;
-	
 }
 
 .aboutText img{
 	width: 30vw;
 	position: absolute;
 	top: 150px;
-	
 }
 
 .aboutList{
@@ -289,8 +286,11 @@ li span{
 
 .bannerText h1{
     font-size: 3vw;
-    color: #000;
+    color: #765817;
     font-weight: 600;
+}
+.bannerText a{
+    color: #765817;
 }
 
 .bannerText img{
@@ -302,6 +302,19 @@ li span{
     width: 20.5vw;
 }
 
+.Affirm {
+    background-color: pink;
+    color: white;
+}
+.Affirm h1{
+    color: rgb(201, 97, 115);
+}
+.Affirm a{
+    color: rgb(201, 97, 115);
+}
+.Affirm img{
+    width: 30.5vw;
+}
 /* FOOTER CSS */
 
 .footer{

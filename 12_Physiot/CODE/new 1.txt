@@ -1,0 +1,159 @@
+<td class="col2"> <a href=""> Treatments </a> </td>
+<td class="col2"> <a href="">Services  </a> </td>
+<td class="col2"><a href=""> Patient Experiences</a> </td>
+<td class="col2"> <a href="">Location </a> </td>
+<td class="col2"> <a href=""> Timings </a> </td>
+
+
+.box .content3 p
+	{
+	position:absolute;
+	margin:0;
+	padding:2 2%;
+	display:inline-block;
+	color:navy;
+	transition:0.5s;
+	transform:translateY(2%);
+	opacity:0;
+	visibility:hidden;
+	}
+.box:hover .content3 p
+{
+	transform:translateY(7%);
+	font-family: Arial;
+	opacity:1;
+	visibility:visible;
+}
+.box .content3 p:hover
+	{
+	color:navy;
+	background-color:lavender;
+	}
+	
+	
+	
+	.testimonials .box:before
+	{
+	content:'';
+	position:absolute;
+	top:-3px;
+	left:-3px;
+	right:-3px;
+	bottom:-3px;
+	background:linear-gradient(45deg,navy,steelblue,lavender,steelblue,navy);
+	transform: skew(2deg,2deg);
+	z-index:-1;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	h3
+{
+	font-family:"Papyrus";
+	font-size:200%;
+	font-color:teal;
+}
+.div1
+{	
+	margin-left:3%;
+	float:left;
+	font-size:80%;
+	color:navy;
+	padding:2%;
+	text-align:center;
+	border:2px;
+	border-style:hidden;
+	border-top-right-radius:20px;
+	border-bottom-left-radius:20px;
+	background-color:lavender;
+	width:70%;	
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="table2"> <h3 class="table2"> About Us:</h3>
+<p class="table2">
+To change the overall look of your document, choose new Theme elements on the Page Layout tab. To change the looks available in the Quick Style gallery, use the Change Current Quick Style Set command. Both the Themes gallery and the Quick Styles gallery provide reset commands so that you can always restore the look of your document to the original contained in your current template.
+</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+https://physio-pedia.com/Low_Back_Pain#
+
+
+
+
+
+
+
+<br> <br> <br> <hr/> <br>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

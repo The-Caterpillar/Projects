@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<title>
+div table
+</title>
+<pre>
+
+</pre>
+<style>
+
+.header1{
+background-color:white;
+text-align: center;
+font-color: White;
+opacity:0.8;
+margin:0px;
+font-family:forte;
+}
+body
+{
+background:linear-gradient(45deg,green,yellow);
+margin:0px;
+}
+
+.Table
+{
+display:table;
+}
+
+.rows
+{
+display:table-row;
+}
+
+.cell
+{ 
+display:cell;
+border: solid;
+border-width: thin;
+border-color: snow;
+
+}
+
+.Title
+{
+display:table-caption;
+font-size: larger;
+text-align:center;
+font-color:white;
+}
+
+.heading
+{
+display:table-row;
+font-weight: bold;
+text-align:center;
+}
+.tables
+{
+		border:solid;
+		height:500px;
+		margin:0px;
+		width:100%;
+		padding-left:5px;
+		padding-right:5px;
+		background-color:orange;
+		cellspacing:2px;
+}
+.Cell
+    {
+        display: table-cell;
+        border: solid;
+        border-width: thin;
+        padding-left: 5px;
+        padding-right: 5px;
+		margin:0px;
+    }
+
+</style> 
+</head> <h1 class="header1"> Musiscals </h1> 
+<body>
+
+<center>
+<table class="tables">
+<tr> 
+	<td class="Cell" rowspan="2" colspan="3"> </td>
+	<td class="Cell"> </td>
+	<td class="Cell" rowspan="2"> </td>
+</tr>
+<tr>
+	<td class="Cell" class="Cell"> </td>
+</tr>
+<tr>
+	<td class="Cell" colspan="2"> </td>
+	<td class="Cell" colspan="3" rowspan="5"> </td>
+</tr>
+<tr>
+	<td class="Cell" colspan="2"> </td>
+</tr>
+<tr>
+	<td class="Cell" colspan="2"> </td>
+</tr>
+<tr>
+	<td class="Cell" colspan="2"> </td>
+</tr>
+<tr>
+	<td class="Cell" colspan="2"> </td>
+</tr>
+<tr>
+	<td colspan="5" class="Cell"> </td>
+</tr>
+<tr>
+	<td class="Cell" width="25%"> </td>
+	<td class="Cell" width="25%"> </td>
+	<td class="Cell" width="25%"> </td>
+	<td class="Cell" width="27%" colspan="2"> </td>
+</tr>
+<tr>
+	<td class="Cell" > </td>
+	<td class="Cell" > </td>
+	<td class="Cell" > </td>
+	<td class="Cell" colspan="2"> </td>
+</tr>
+<tr>
+	<td class="Cell" colspan="5"> </td>
+</tr>
+</table> 
+</center>
+</body>
+</html>

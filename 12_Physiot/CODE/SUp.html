@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<title> Sign-Up Physiot </title>
+<style type="text/css">
+body
+{	
+	margin:0;
+	background:linear-gradient(60deg,lightsteelblue,white,lightsteelblue);
+	background-attachment:fixed;
+	align-items:center;
+}
+.headlinkcols
+	{	
+	position:relative;
+	padding:0.2%;
+	border:1px;
+	margin-left:0;
+	margin-right:0
+	margin-top:0;
+	margin-bottom:2%;
+	width:100%;
+	line-height:1.6em;
+	font-family:"Franklin Gothic Heavy";
+	background-color:white;
+	text-align:center;
+	}
+.Col1
+	{	
+	margin:0;
+	background-color:lavender;
+	width:25%;
+	border-bottom-left-radius:20px;
+	border-top-right-radius:20px;
+	}
+a
+	{	
+	text-decoration:none;
+    }
+a:link
+	{	
+	color:navy;
+	}
+a:visited
+{	
+	color:purple;
+}
+a:hover
+{	
+	color:mediumslateblue;	
+}
+a:active
+	{	
+	color:palegreen;
+	}
+	
+
+h1
+{	text-shadow:20%;
+	font-family:"Cooper Black";
+	color:navy;
+	text-align:center;
+	font-size:200%;
+	margin-bottom:1%;
+}
+.table
+{
+	margin-top:2%;
+	position:relative;
+	font-family:"Constantia";
+	padding:2%;
+	border:10%;
+	background:linear-gradient(45deg,steelblue,lightsteelblue,steelblue);
+	border-radius:10%;
+}
+.col2
+{
+	font-size:100%;
+	align-items:center;
+	font-family:"Consolas";
+	padding:2%;
+	text-align:center;
+	border:2px;
+	background:lavender;
+	border-radius:10px;
+}
+.footer
+{
+	position:absolute;
+	stretch:100%;
+	float:bottom;
+	font-size:100%;
+	background-color:lightsteelblue;
+	color:white;
+	text-align:center;
+}
+</style>
+	
+	
+<table class="headlinkcols">
+<tr> <h1 class="header"> </h1>  </tr>
+<tr>
+<td class="Col1" > <a href="Home.html"> HOME </a> </td>
+<td class="Col1" > <a href="SUp.html"> Login/Sign up </a> </td>
+<td class="Col1" class="links"> <a href="PpatientExp.html"> Patient Experiences </a> </td>
+<td class="Col1"> <a href="Security.html"> Security and Help </a> </td>
+</tr>
+</table>
+<br/>
+<h1> Sign-Up with us  </h1>
+
+</head>
+<body>
+<center>
+<form>
+<table class="table">
+<center>
+<tr> <th class="col2">First Name</th> <td><input type="text" name="text" placeholder="First Name"/> </td> </tr>
+<tr><th class="col2">Last Name</th> <td><input type="text" name="text" placeholder="Last Name"/> </td> </tr>
+<tr> 
+<center><th class="col2">Email </th> <td><input type="text" name="Email" placeholder="                @gmail.com"/> </td> <center>
+</tr>
+<tr><th class="col2">Password </th> <td><input type="password" name="text" placeholder="************"/> </td> </tr>
+<tr><th class="col2">Re-Enter Password</th> <td><input type="password" name="text" placeholder="************"/> </td> </tr>
+<tr>
+<center> <th class="col2"> Phone </th> <td> <input type="text" name="cn" placeholder="+91"/> </td> </center>
+</tr>
+<tr>
+<tr> <th class="col2"> Join Date: </th> <td> <input type="date" name="jd" size="31"/> </td> </tr> 
+<th class="col2">State </th>
+<td>
+<select name="Location">
+<option value="Delhi"> Delhi </option>
+<option value="Bihar"> Bihar </option>
+<option value="UP"> UP</option>
+<option value="MP"> MP </option>
+<option value="Andhra P"> Andhra P </option>
+<option value="Arunachal P"> Arunachal P </option>
+<option value="HP"> HP </option>
+<option value="Orissa"> Odisha </option>
+<option value="Karnataka"> Karnataka </option>
+<option value="Kerala"> Kerala </option>
+<option value=" Maharashtra"> Maharashtra </option>
+<option value="Assam">  Assam</option>
+<option value="Chhattisgarh"> Chhattisgarh </option>
+<option value="GOA"> GOA </option>
+<option value="Gujarat"> Gujarat  </option>
+<option value="Haryana"> Haryana </option>
+<option value="J&K"> J&K </option>
+<option value="Jharkhand"> Jharkhand </option>
+<option value="Manipur"> Manipur </option>
+<option value="Meghalaya"> Meghalaya </option>
+<option value="Mizoram"> Mizoram </option>
+<option value="Nagaland"> Nagaland </option>
+<option value="Punjab"> Punjab </option>
+<option value="Rajasthan"> Rajasthan </option>
+<option value="Sikkim"> Sikkim </option>
+<option value="Tamil Nadu"> Tamil Nadu </option>
+<option value="Telangana"> Telangana </option>
+<option value="Tripura"> Tripura </option>
+<option value="West Bengal"> West Bengal </option>
+<option value="Uttarakhand"> Uttarakhand </option>
+<option value="Port Blair"> Port Blair </option>
+<option value="Chandigarh"> Chandigarh </option>
+<option value="Silvassa"> Silvassa </option>
+<option value="Daman"> Daman </option>
+<option value="Kavaratti"> Kavaratti </option>
+<option value="Pondicherry"> Pondicherry </option>
+</select>
+</td>
+</tr>
+</table>
+</form>
+<br/>
+<table style="margin-bottom:7%">
+<tr>
+<td><input type="button" name="Sign-up" value="Sign-Up"/></td>
+<td> <a href="#Login"> <input type="button" name="Login Instead" value="Login Instead"/> </a> </td>
+</tr>
+</table>
+<h1 style="margin-bottom:0%" id="Login"> Login </h1>
+<table class="table">
+<tr class="col2"> <th>ID/Phone </th> <td><input type="text" name="ID/Phone" /> </td> </tr>
+<tr class="col2"> <th>Password </th> <td><input type="password" name="text" placeholder="************"/> </td> </tr>
+</table>
+<br/>
+<table style="margin-bottom:2%">
+<tr>
+<td><input type="button" name="Login" value="Login"/></td>
+</tr>
+</table>
+<a href="LoginRecovery.html"> Forgot Password </a>
+<br/>
+</center>
+
+<br/>
+<hr color="lightsteelblue"/>
+
+<footer class="footer" style="float:bottom">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Content rights: No-rights-specified | Developed and Managed by- Saras(IIHT)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</footer> 
+</body>
+</html>

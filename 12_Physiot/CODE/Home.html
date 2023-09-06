@@ -1,0 +1,504 @@
+<!doctype html>
+<html>
+<head> <title> Home-Physiot </title>
+<style type="text/css">
+body
+	{
+    margin:0;
+	}
+.Col1
+	{
+	width:25%;
+	background-color:lavender;
+	border-bottom-left-radius:30%;
+	border-top-right-radius:30%;
+	}
+h1
+{
+    margin-top:0;
+	background:linear-gradient(60deg,lightsteelblue,white,lightsteelblue);
+	width:100%;
+}
+.header
+	{
+	margin-top:1%;
+	margin-bottom:0;
+	margin-left:0;
+	width:100%;
+	height:20vw;
+	}
+	a
+	{
+	text-decoration:none;
+    }
+a:link
+	{
+	color:navy;
+	}
+a:visited
+{
+	color:purple;
+}
+a:hover
+{
+	color:mediumslateblue;
+}
+a:active
+	{
+	color:palegreen;
+	}
+.headlinkcols
+	{
+	margin-top:0;
+	padding:0.5%;
+	border:1px;
+	align:center;
+	width:100%;
+	line-height:1.6em;
+	font-family:"Candara";
+	background:linear-gradient(60deg,lightsteelblue,steelblue,lightsteelblue);
+	text-align:center;
+	}
+
+.table3
+	{
+	margin:3%;
+	position:relative;
+	justify-content:center;
+	align-items:center;
+	min-height:2vh;
+	font-family:"Candara";
+	padding:2%;
+	}
+.container
+	{
+	position:relative;
+	display:grid;
+	grid-template-columns:repeat(auto-fill, minmax(15%,1fr));
+	grid-template-rows:auto;
+	grid-gap:2.5%;
+	text-align:center;
+	}
+.container .box
+	{
+	border-radius:20px;
+	text-align:center;
+	position:relative;
+	height:7vw;
+	justify-content:center;
+	align-items:center;
+	border-style:hidden;
+	background:linear-gradient(45deg,lavender,lightsteelblue,lavender);	
+	}
+.content
+	{
+	position:relative;
+	padding:2%;
+	}
+.box:hover .content h2
+	{
+	position:relative;
+	}
+ul
+	{
+	list-style-type:none;
+	color:navy;
+	margin-left:0;
+	}
+.box .content ul
+	{
+	margin:0;
+	padding:0;
+	font-size:100%;
+	color:navy;
+	font-family:"Corbel";
+	position:absolute;
+	display:block;
+	transition:0.5s;
+	transform:translateY(-5vw);
+	opacity:0;
+	visibility:hidden;
+	}
+.box:hover .content ul
+{
+	margin:0;
+	transform:translateY(0);
+	opacity:1;
+	visibility:visible;
+}
+.box .content ul:hover
+	{
+	margin:0;
+	color:navy;
+	background-color:lavender;
+	}
+
+.box .content ul
+	{
+	margin: 0 0;
+	padding: 3%;
+	color:#fff;
+	}
+
+.content2
+	{
+	position:relative;
+	padding:1%;
+	text-align:center;
+	}
+.box:hover .conten2 h2
+	{
+	position:absolute;
+	}
+.box .content2 ul
+	{
+	margin:0 0 0;
+	padding:0;
+	font-size:15px;
+	color:navy;
+	font-family:"Corbel";
+	position:absolute;
+	margin: 0;
+	padding:0;
+	display:block;
+	color:navy;
+	transition:0.5s;
+	transform:translateY(10px);
+	opacity:0;
+	visibility:hidden;
+	}
+.box:hover .content2 ul
+{
+	transform:translateY(-2%);
+	opacity:1;
+	visibility:visible;
+}
+.box .content2 ul:hover
+	{
+	color:navy;
+	background-color:lavender;
+	}
+.box .content2 ul
+	{
+	margin: 0 0;
+	padding: 3%;
+	color:#fff;
+	}
+
+.box .content3 p
+	{
+	position:absolute;
+	margin:0;
+	padding:0;
+	display:block;
+	color:navy;
+	transition:0.5s;
+	transform:translateY(0);
+	opacity:0;
+	visibility:hidden;
+	}
+.box:hover .content3 p
+{
+	transform:translateY(0);
+	font-family:"Book Antiqua";
+	font-size:100%;
+	opacity:1;
+	visibility:visible;
+}
+.box .content3 p:hover
+	{
+	color:steelblue;
+	background-color:lavender;
+	}
+h2
+{
+	font-family:"Arial Narrow";
+	font-size:150%;
+	text-align:center;
+}
+h3
+{
+	font-family:"Century Schoolbook";
+	font-size:200%;
+}
+p
+{
+	font-family:"Book Antiqua";
+	font-size:150%;
+	font-style:bold;
+}
+.div1
+{
+	margin-top:2%;
+	margin-left:3%;
+	float:left;
+	font-size:80%;
+	color:steelblue;
+	padding:2%;
+	text-align:center;
+	border:2px;
+	border-style:hidden;
+	line-height:3em;
+	border-top-right-radius:50px;
+	border-bottom-left-radius:50px;
+	background-color:mistyrose;
+	width:70%;
+}
+.div2
+{
+	width:90%;
+	margin:3%;
+	font-size:80%;
+	color:navy;
+	padding:2%;
+	text-align:center;
+	border:2px;
+	border-style:hidden;
+	line-height:3em;
+	border-radius:50px;
+	background-color:mistyrose;
+}
+.div3
+{
+	margin:2%;
+	font-size:80%;
+	color:navy;
+	text-align:center;
+	border:2px;
+	border-style:hidden;
+	float:left;
+	height:50px;
+	width:96%;
+	border-top-left-radius:50px;
+	border-bottom-right-radius:50px;
+	background-color:lavender;
+}
+.footer
+{
+position:absolute;
+font-stretch:100%;
+float:bottom;
+font-size:100%;
+background-color:lightsteelblue;
+color:white;
+text-align:center;
+}
+</style>
+
+<h1><br/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+<a href="home.html"><img src="phy7.png" alt="HOME"/> </a>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+<a href="https://www.facebook.com/"> <img src="facebook.png" style="border-radius:10px;" alt="facebook"/> </a>
+           &nbsp; &nbsp; 
+<a href="https://in.linkedin.com/"> <img src="LinkedIn.jpg" style="border-radius:10px;" alt="linkedin"/> </a>
+         &nbsp; &nbsp;
+<a href="https://twitter.com/login?lang=en"> <img src="twitter-512.png" style="border-radius:10px;" alt="twitter"/> </a>
+              &nbsp; &nbsp;
+<a href="https://www.instagram.com/?hl=en"> <img src="instagram.jpg" style=" border-radius:5px; height:25px;" alt="instagram"/> </a>&nbsp; &nbsp;&nbsp; &nbsp;
+
+<table class="table">
+	<input type="text" name="text" class="search" placeholder="Search Here"/>
+	<input type="submit" name="submit" class="submit" value="Search"/>
+</table>
+</h1>
+
+
+<img class="header" src="Untitled-design6.jpg"/>
+<table class="headlinkcols">
+	<tr>
+	<td class="Col1" > <a href="Home.html"> HOME </a> </td>
+	<td class="Col1" > <a href="SUp.html"> Login/Sign up </a> </td>
+	<td class="Col1" class="links"> <a href="PatientExp.html"> Patient Experiences </a> </td>
+	<td class="Col1"> <a href="Security.html"> Security and Help </a> </td>
+	</tr>
+</table>
+</head>
+<body>0
+
+
+<div class="table3">
+<div class="container">
+<div class="box">
+<div class="content">
+<h2> <a href="services.html"> What do we DO? </a></h2>
+<ul>
+<li> <a href=""> Physiotherapy </a> </li>
+<li> <a href=""> Manual Therapy </a> </li>
+<li> <a href=""> Electro Therapy </a></li>
+<li> <a href=""> Laser Therapy </a></li>
+<li> <a href="">Custom Orthotics</a></li>
+<li> <a href="">Speech Therapy</a></li>
+<li> <a href="">Ooccupational Therapy</a></li>
+<li> <a href="">Orthopaedic Therapy</a></li> 
+<li> <a href="">Neuro Therapy</a></li>
+<li> <a href="">Sports Therapy</a></li>
+<li> <a href="">Paediatrics Therapy</a></li>
+<li> <a href="">Dry Needling</a></li>
+<li> <a href="">Physiotherapy at home</a></li>
+</ul>
+</div>
+</div>
+<div class="box">
+<div class="content2">
+<h2><a href="treatments.html"> Treatments </a></h2>
+<ul class="content2">
+<li> <a href="https://www.physio-pedia.com/Anterior_Cruciate_Ligament_(ACL)_Rehabilitation">ACL </a> </li>
+<li> <a href="https://www.physio-pedia.com/Ankle_Sprain"> Ankle Sprain</a> </li>
+<li> <a href="https://www.healthline.com/health/shoulder-impingement"> Shoulder Impigment </a></li>
+<li> <a href="https://physio-pedia.com/Low_Back_Pain"> Back Pain </a></li>
+<li> <a href="https://www.physio-pedia.com/Plantarfasciitis"> Plantar Fasciitis</a></li>
+<li> <a href="https://www.physio-pedia.com/Bell%27s_Palsy"> Bell's Palsy</a></li>
+<li> <a href="https://www.medicinenet.com/osteoarthritis/article.htm"> Ostioarthritis</a></li>
+<li> <a href="https://www.physio-pedia.com/Rheumatoid_Arthritis"> Rheumatoid arthritis</a></li>
+<li> <a href="https://www.physio-pedia.com/MS_Multiple_Sclerosis"> Multiple Sclerosis</a></li> 
+<li> <a href="https://www.physio-pedia.com/Physiotherapy_Management_of_Spinal_Cord_Injuries"> Spinal Chord Injuries</a></li>
+<li> <a href="https://www.physio-pedia.com/Ankylosing_Spondylitis"> Ankylosing Spondylitis</a></li>
+<li> <a href="https://www.physio-pedia.com/Brachial_plexus"> Brachial Plexus Injury</a></li>
+<li> <a href="https://www.physio-pedia.com/Calf_Strain"> Calf Strain</a></li>
+<li> <a href="https://www.mayoclinic.org/diseases-conditions/foot-drop/diagnosis-treatment/drc-20372633"> Foot Drop</a></li>
+<li> <a href="https://www.physio-pedia.com/Carpal_Tunnel_Syndrome"> Carpal Tunnel Syndrome</a></li>
+<li> <a href="https://www.intechopen.com/books/neurological-physical-therapy/physical-therapy-for-cerebellar-ataxia"> Cerebellar Ataxia</a></li>
+<li> <a href="https://www.physio-pedia.com/Cervical_Spondylosis"> Cervical Spondylosis</a></li>
+<li> <a href="https://www.physio-pedia.com/Cervicogenic_Headache"> Cervicogenic Headache</a></li>
+<li> <a href="https://www.physio-pedia.com/Chondromalacia_Patellae"> Chondromalesia Patella</a></li>
+<li> <a href="https://www.physio-pedia.com/Costochrondritis"> Costochondritis</a></li>
+<li> <a href="https://www.physio-pedia.com/Diastasis_recti_abdominis"> Diastasis Recti</a></li>
+<li> <a href="https://www.physio-pedia.com/Fibromyalgia"> Fibromyalgia</a></li>
+<li> <a href="https://www.physio-pedia.com/Calcaneal_Spurs"> Calcaneal Spur</a></li>
+<li> <a href="https://physioworks.com.au/Injuries-Conditions/Regions/hip-pain-joint-injury"> Hip Pain</a></li>
+<li> <a href="https://www.physio-pedia.com/Lumbar_Spinal_Stenosis"> Lumbar Spinal Stenosis</a></li>
+<li> <a href="https://www.physio-pedia.com/Meniscal_Lesions"> Meniscus Injury</a></li>
+<li> <a href="https://www.physio-pedia.com/Meralgia_Paraesthetica"> Meralgia Paresthetica</a></li>
+<li> <a href="https://www.physio-pedia.com/Duchenne_Muscular_Dystrophy"> Muscular Dystrophy</a></li>
+<li> <a href="https://www.physio-pedia.com/Trigeminal_Neuralgia"> Neuralgia</a></li>
+<li> <a href="https://www.physio-pedia.com/Diabetic_Neuropathy"> Neuropathy</a></li>
+<li> <a href="https://www.portea.com/physiotherapy/parkinsons-disease-treatment/"> Parkinson Desease</a></li>
+<li> <a href="https://www.physio-pedia.com/Fracture"> Post Fracture</a></li>
+<li> <a href="https://www.physio-pedia.com/Scoliosis">Scoliosis</a></li>
+<li> <a href="https://www.physio-pedia.com/Shin-splints"> Shin Splint</a></li>
+<li> <a href="https://www.physio-pedia.com/Trigger_Points">Trigger Point Pain </a></li>
+<li> <a href="https://www.physio-pedia.com/Traumatic_Brain_Injury"> Traumatic Brain Injury</a></li>
+<li>  <a href="https://www.thephysiocompany.com/injury-or-condition/reflex-sympathetic-dystrophy-rsd">Reflex Sympathetic Dystrophy </a></li>
+<li><a href="https://www.webmd.com/osteoarthritis/knee-replacement-18/knee-surgery-physical-therapy">  Total Knee Replacement</a></li>
+<li> <a href="https://www.physio-pedia.com/Sciatica">Sciatica</a></li>
+<li> <a href="https://www.physio-pedia.com/Disc_Herniation"> Slipped Disc</a></li>
+<li> <a href="https://www.physio-pedia.com/Sacroiliac_joint_syndrome"> (SIJ) Joint Dysfunction</a></li>
+<li> <a href="https://physioworks.com.au/injuries-conditions-1/frozen_shoulder"> Frozen Shoulder</a></li>
+<li> <a href="https://www.physiotherapy-treatment.com/cerebral-palsy-physiotherapy.html"> Cerebral Palsy</a></li>
+<li> <a href="https://www.physio-pedia.com/Total_Knee_Arthroplasty"> Arthroplasty</a></li>
+<li> <a href="https://www.physio-pedia.com/Benign_Positional_Paroxysmal_Vertigo_(BPPV)"> Vertigo</a></li>
+<li> <a href="https://www.physio-pedia.com/Trigger_finger"> Trigger Finger</a></li>
+<li> <a href="https://www.physio-pedia.com/Tendinopathy"> Tendonitis</a></li>
+<li> <a href="https://www.healthline.com/health/tmj-exercises"> (TMD) Joint Dysfunction</a></li>
+<li> <a href="https://www.physio-pedia.com/Supraspinatus_tendinopathy">Supraspinatus Tendinitis </a></li>
+<li> <a href="https://www.physio-pedia.com/Incontinence">Stress Incontinence </a></li>
+</ul>
+</div>
+</div>
+<div class="box">
+<div class="content3">
+<h2><a href="Contact.html"> &nbsp;&nbsp;&nbsp;&nbsp;  Contact-Us </a></h2>
+<p> Phone: 9000000000/8000000000 </p>
+</div>
+</div>
+<div class="box">
+<div class="content3">
+<h2><a href="Location.html"> &nbsp;&nbsp;&nbsp; Location </a></h2>
+<p> Sector 48, Block number-23, Near Huda City Center Metro, Gurugram, Haryana </p>
+</div>
+</div>
+<div class="box">
+<div class="content3">
+<h2> <a href="Timings.html"> Timings </a> </h2>
+<p> Tue-Fri: 9:30 am to 01:00 pm ;<br/> 3:pm to 9:30 pm <br/> Sat-Sun: 2:00 pm to 8:30 pm </p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="div1" style="background-color:mistyrose;">
+<h3> <u> About Us: </u> </h3>
+<p>
+At Physiot, we are committed to provide modern and advanced physiotherapy services at affordable cost by our professional physiotherapist in Gurgaon. Our expert physiotherapist gives proper physiotherapy treatment for problems like knee, join pain, back pain, shoulder pain, hip pain etc. Expert physiotherapists are available at Physiot. Dr. X is one the best physiotherapist in Gurgaon who provide quality treatment to their patients. He is very friendly cooperative physiotherapist. Call us at 9081000000 and Book an appointment now.
+</p>
+</div>
+
+
+
+<div class="div1" style="float:right; background-color:lavender; margin-right:3%;">
+<h3> <u>About Dr. X Z</u> </h3>
+<p>
+Dr. X holds Bachelor of Physiotherapy (BPT) & Master of Physiotherapy (MPT) with specialization in Orthopedics, Postgraduate Diploma in Ergonomics, MBA in Hospital Management as well as a plethora of certifications and short-term courses dealing with specialized branches of physiotherapy.
+
+Dr. X is also a recipient of numerous awards in the field of physiotherapy. He has been conferred with the Medical Excellence award in 2014, Healthcare Excellence Award and the Dr. B. R.Ambedkar Seva Ratna Award in 2012. He has also been rated as the best  Physiotherapist in Gurgaon by Times Now in 2013. Dr. X also happens to be a member of the Indian Association of Physiotherapy and the Delhi Council for Physiotherapy and has helped establish the physiotherapy department in a lot of famous hospitals in Gurgaon.
+
+Currently, Dr. X along with his team of highly skilled therapists at Physiot is dedicated to providing the best physiotherapy in Gurgaon.  Applying various physical therapy treatments they are well equipped with the skills and knowledge to deliver the best in physiotherapy in Gurgaon.
+</p>
+</div>
+
+
+
+<div class="div2" style="float:right; margin-right:3%;" >
+<h3> <u> Specialisations: </u> </h3>
+<marquee scrollamount="5" behavior="alternate">
+<img src="phys1.jpeg" height="200px" width="200px" alt="Physiotherapy"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="phys2.jpg" height="200px" width="200px" alt="manual therapy"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="phys3.jpg" height="200px" width="200px" alt="electro therapy"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="phys4.jpg" height="200px" width="200px"  alt="laser therapy"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="phys5.jpg" height="200px" width="200px" alt="Custom Orthotics"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="phys6.jpg" height="200px" width="200px" alt="Speech Therapy"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="phy7.jpg" height="200px" width="200px" alt="Occupational Therpy"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="phy8.jpg" height="200px" width="200px" alt="Orthopaedic Therapy"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="phy9.jpg" height="200px" width="200px" alt="Neuro Therapy"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="phy10.jpg" height="200px" width="200px" alt="Sports Therapy"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="phy11.jpg" height="200px" width="200px" alt="Paediatrics therapy"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="phy12.jpg" height="200px" width="200px" alt="Dry Needeling"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="phy13.jpg" height="200px" width="200px" alt="Physiotherapy at home"/>
+<br/>
+<p style="font-family:Arial Black">
+&nbsp;&nbsp;&nbsp;
+Physiotherapy
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+manual therapy
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+electro therapy 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+laser therapy
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Custom Orthotics
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Speech Therapy 
+&nbsp;&nbsp;
+Occupational Therpy
+&nbsp;
+Orthopaedic Therapy
+&nbsp;&nbsp;&nbsp;
+Neuro Therapy
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Sports Therapy
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Paediatrics therapy 
+&nbsp;&nbsp;&nbsp;&nbsp;
+Dry Needeling 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Physiotherapy at home
+</p>
+</marquee> <br/>
+</div>
+
+
+
+<br/> <br/>
+
+
+<div class="div3">
+<h3>  </h3>
+<pre> <footer> Content rights: No-rights-specified | Developed and Managed by- Saras(IIHT)</footer> </pre>
+</div>
+
+
+</body>
+</html>
