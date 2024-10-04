@@ -2,7 +2,7 @@
  <img src="HealthiHer/img/appimg.png" width="660px">
 </p>
 <h1 align="center">
-	HealthiHer
+	Womanias
 </h1>
 
 <p align="center">
