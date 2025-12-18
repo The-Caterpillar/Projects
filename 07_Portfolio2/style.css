@@ -118,6 +118,8 @@ a{
     flex-direction: column;
     justify-content: center;
     gap:2rem;
+    width: 550px; /* pick value that fits your text */
+    flex-shrink: 0;
 }
 .hero-heading{
     font-size: 32px;
@@ -135,7 +137,8 @@ a{
 .hero-description{
     margin-top: 1rem;
     width:80%;
-    font-weight:500;
+    font-size: 0.8em;
+    font-weight:bold;
 }
 .button-pink{
     background-color:rgb(255, 34, 0);
